@@ -9,12 +9,12 @@ Network Components</br>
 2. Switch configured to 2 VLANs, for each simulation we change the mapping of the port-VLAN for each pc</br>
 # Simulations 1 - PCs on the same VLAN
 ![](Simulation_1_test_1.PNG)</br>
-1. Configure Switch ports of all PCs be VLAN1
+1. Configure Switch ports of all PCs be VLAN1</br>
 2. Run PING from PC1 to PC2, make sure it replieas</br>
-3. In this scenarion ping message should arrive since the two PCs are on the same VLAN
-4. Since ARP Table at PC1 is empty, it first sends ARP to find PC2, switch sends ARP message to all PCs since it doesn't understand IP address
-5. Only PC2 replies
-6. PC1 now sends PING message direcrtly to mac address of PC2
+3. In this scenarion ping message should arrive since the two PCs are on the same VLAN</br>
+4. Since ARP Table at PC1 is empty, it first sends ARP to find PC2, switch sends ARP message to all PCs since it doesn't understand IP address</br>
+5. Only PC2 replies</br>
+6. PC1 now sends PING message direcrtly to mac address of PC2</br>
 ![](Simulation_1_test_2.PNG)</br>
-1. Sending PING again, doesn't trigger ARP since table is already filled with PC2 MAC address
+1. Sending PING again, doesn't trigger ARP since table is already filled with PC2 MAC address</br>
 # Simulations 2 - PCs on the same VLAN
