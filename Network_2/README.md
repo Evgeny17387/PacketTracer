@@ -13,6 +13,7 @@ Network Components</br>
 ![](simulation_before_static_routing.PNG)</br>
 2. Sending PING message shouldn't work since ARP message won't be sent to another subnet</br>
 3. Adding static routing for both directions helps solving this issue</br>
+![](simulation_static_routing.PNG)</br>
 ![](simulation_after_static_routing.PNG)</br>
 4. The message performs the following steps:</br>
 	a. ARP is sent to indentify the DefaultGateway since the destination IP address doesn't belong to the current local network</br>
