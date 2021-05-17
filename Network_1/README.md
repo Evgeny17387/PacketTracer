@@ -29,4 +29,4 @@ Network Components</br>
 5. Since ARP doesn't find PC2, PING message is not being sent</br>
 ## Test 2 - not first message
 ![](Simulation_2_test_2.PNG)</br>
-1. Sending PING again, triggers ARP again since table is doesn't contain PC2 MAC address</br>
+1. Sending PING again, triggers ARP again since ARP Table doesn't contain PC2 MAC address</br>
