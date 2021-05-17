@@ -19,7 +19,7 @@ Network Components</br>
 ## Test 2 - not first message
 ![](Simulation_1_test_2.PNG)</br>
 1. Sending PING again, doesn't trigger ARP since table is already filled with PC2 MAC address</br>
-# Simulations 2 - PCs on the same VLAN
+# Simulations 2 - PCs on the different VLANs
 ## Test 1 - first message
 ![](Simulation_2_test_1.PNG)</br>
 1. Configure Switch ports of PC1 and PC3 to VLAN1 and PC2 to VLAN2</br>
@@ -27,3 +27,6 @@ Network Components</br>
 3. In this scenarion ping message shouldn't arrive since the two PCs are on different VLANs</br>
 4. Since ARP Table at PC1 is empty, it first sends ARP to find PC2, switch sends ARP message to all PCs on the same VLAN (in this case only PC3)</br>
 5. Since ARP doesn't find PC2, PING message is not being sent</br>
+## Test 2 - not first message
+![](Simulation_2_test_2.PNG)</br>
+1. Sending PING again, triggers ARP again since table is doesn't contain PC2 MAC address</br>
