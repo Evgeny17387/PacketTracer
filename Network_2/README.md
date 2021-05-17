@@ -8,7 +8,7 @@ Network Components</br>
 1. Host PC1 and PC2 configured with IPs 10.0.0.2 and 192.168.0.2 respectively, SubNetMask is 255.255.255.0</br>
 2. Router with 2 IPs for ports with PC1 and PC2 - 10.0.0.1 and 192.168.0.1 respectively, SubNetMask is 255.255.255.0</br>
 3. Host PC1 and PC2 configured with DefaultGateway IPs 10.0.0.1 and 192.168.0.1 respectively</br>
-# Simulations 1
+# Simulations
 1. Send PING message from PC1 to PC2</br>
 ![](simulation.PNG)</br>
 2. The message performs the following steps:</br>
