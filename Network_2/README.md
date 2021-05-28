@@ -23,10 +23,20 @@ Network Components</br>
 	e. PC1 respondes to PING message</br>
 
 # Simulations 2 - Different VNET - First Ping Fail
-1. Send PING message from PC0 to PC1</br>
+1. Send PING message from PC0 to PC2</br>
 ![](simulation_2.PNG)</br>
 2. The message performs the following steps:</br>
 	a. ARP is sent to indentify the DefaultGateway since the destination IP address doesn't belong to the current local network</br>
 	b. PING message is forwarded to the Router</br>
 	c. ARP message is send to indentify PC2</br>
 	d. PING Failes due to time out</br>
+
+# Simulations 3 - Different VNET - Seconf Ping Success
+1. Send PING message from PC0 to PC2</br>
+![](simulation_3.PNG)</br>
+2. The message performs the following steps:</br>
+	a. no need for ARP since ARP table of PC0 is already filled with Default GW Mac Address</br>
+	![](simulation_4.PNG)</br>
+	b. PING message is forwarded to the Router</br>
+	c. no need for ARP since ARP table of the router is already filled with PC2 Mac Address</br>
+	d. PING Success</br>
