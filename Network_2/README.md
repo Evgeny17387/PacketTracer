@@ -31,7 +31,7 @@ Network Components</br>
 	c. ARP message is send to indentify PC2</br>
 	d. PING Failes due to time out</br>
 
-# Simulations 3 - Different VNET - Seconf Ping Success
+# Simulations 3 - Different VNET - Second Ping Success
 1. Send PING message from PC0 to PC2</br>
 ![](simulation_3.PNG)</br>
 2. The message performs the following steps:</br>
