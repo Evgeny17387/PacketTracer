@@ -3,8 +3,8 @@
 
 # Description
 Network Components</br>
-1. 3 Router</br>
-1. 3 Host PCs</br>
+1. 2 Router</br>
+1. 2 Host PCs</br>
 
 # Configuation
 1. All Routers and Hosts are configured with the show IPs and respective Subnets</br>
@@ -14,16 +14,12 @@ Network Components</br>
 ![](simulation_1.PNG)</br>
 2. The message can't be sent since the router doesn't now how to reach the desired network</br>
 
-# Simulations 1 - Can't send PING to other subnet
-1. Send PING message from 10.0.0.2 to 192.168.0.2</br>
-![](simulation_1.PNG)</br>
-2. The message can't be sent since the router doesn't now how to reach the desired network</br>
-
 # Simulations 2 - Setting OSPF
-1. First we set the OSPF for bith Routers</br>
+1. First we set the OSPF for both Routers</br>
 1. Send PING message from 10.0.0.2 to 192.168.0.2</br>
 ![](simulation_2.PNG)</br>
 2. The message reaches the destination since Routers are build up dynamic routing to all networks, after OSPF </br>
+3. Router 10.0.0.1 learns that inroder to reach subnet 192.168.0.0 it needs to send messages through interface f0/1
 ![](simulation_3.PNG)</br>
 
 # Config OSPF Commands
